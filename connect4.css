@@ -1,0 +1,40 @@
+table{
+    border: 1px solid black;
+    background-color: blue;
+    transform: rotate(90deg);
+}
+td {
+    border: solid 1px black;
+    border-radius: 50%;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+tr{
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+}
+tr:hover{
+    background-color: rgba(250, 245, 239,0.5);
+}
+.player1{
+    background-color: red ;
+    animation-name: fall-animation;
+    animation-duration: 500ms;
+
+}
+
+@keyframes fall-animation {
+    from {
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.player2{
+    background-color: yellow;
+    animation-name: fall-animation;
+    animation-duration: 500ms;
+}
